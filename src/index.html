@@ -3,36 +3,22 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta charset="utf-8">
-    <title>Triangle Tracker</title>
+    <title>Find the Area of a Shape</title>
   </head>
   <body>
     <div class="container">
-      <h1>Triangle Tracker</h1>
-      <p>Triangles have three sides and they may be created equal, but the sum of two sides can not be less than or equal to the third. Enter three numbers to find out if you've created a triangle and, if so, what type of triangle it is.</p>
-
-      <form id="lengths">
+      <h1 class="mt-4">Shape Area Finder</h1>
+      <h5 class="mb-4">Calculate area of circle by entering its diameter:</h5>
+      <form id="shapes">
         <div class="form-row form-inline mt-2">
           <div class="col-sm-12 form-group">
-            <label for="side1" class="mr-2">Side 1 length:</label>
-            <input type="number" id="side1"  class="form-control" min="1" required>
-          </div>
+            <label for="diameter" class="mr-2 mb-4">Circle diameter:</label>
+            <input type="number" id="diameter"  class="form-control mb-4" step="0.01" min="0" required> </div>
         </div>
-        <div class="form-row form-inline mt-2">
-          <div class="col-sm-12 form-group">
-            <label for="side2" class="mr-2">Side 2 length:</label>
-            <input type="number" id="side2"  class="form-control" min="1" required>
-          </div>
-        </div>
-        <div class="form-row form-inline mt-2 mb-4">
-          <div class="col-sm-12 form-group">
-            <label for="side2" class="mr-2">Side 3 length:</label>
-            <input type="number" id="side3"  class="form-control" min="1" required>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">What Type of Triangle is it?</button>
+        <button type="submit" class="btn btn-primary mb-4">Find Area of a Circle</button>
       </form>
-      <div id="tracker" class="answer">
-        <p id="answer"></p>
+      <div id="shapeAnswer" class="answer">
+        <p id="circleAnswer"></p>
       </div>
     </div>
   </body>
